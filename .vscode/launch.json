@@ -9,7 +9,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}\\lib\\test.js",
+            "program": "${workspaceFolder}/lib/rangeList.js",
             "runtimeArgs": ["-r", "flow-remove-types/register"]
         }
     ]

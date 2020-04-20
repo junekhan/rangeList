@@ -1,12 +1,3 @@
-// Task: Implement a class named 'RangeList'
-// A pair of integers define a range, for example: [1, 5). This range includes integers: 1, 2, 3, and 4.
-// A range list is an aggregate of these ranges: [1, 5), [10, 11), [100, 201)
-
-/**
- * 
- * NOTE: Feel free to add any extra member variables/functions you like.
- */
-
  // @flow
 
 class ImpossibleError extends Error {
@@ -446,8 +437,7 @@ class RangeList {
    * Adds a range to the list
    * @param {Array<number>} range - Array of two integers that specify beginning and end of range.
    */
-  add(range) {
-    // TODO: implement this
+  add(range: any) {
     let r: RangeTuple = range
     if (!Range.isValid(r[0], r[1])) {
       return;
@@ -460,8 +450,7 @@ class RangeList {
    * Removes a range from the list
    * @param {Array<number>} range - Array of two integers that specify beginning and end of range.
    */
-  remove(range) {
-    // TODO: implement this
+  remove(range: any) {
     let r: RangeTuple = range
     if (!Range.isValid(r[0], r[1])) {
       return;
@@ -474,7 +463,6 @@ class RangeList {
    * Prints out the list of ranges in the range list
    */
   print() {
-    // TODO: implement this
     let text: string = "";
     this.rangeArr.forEach((r: Range) => { text = text + r.toString() + " "; })
     console.log(text);
