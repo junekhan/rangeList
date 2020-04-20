@@ -5,7 +5,6 @@ This is a convenient tool to manage ranges or intervals.
 An interval is represented as [m, n), where m is the inclusive begining and n is the exclusive end, and every single integer in between is included. RangeList can add(merge), remove(separate) ranges.
 
 
-This project is powered by [Flow](https://github.com/facebook/flow)
 
 ## Installation
 
